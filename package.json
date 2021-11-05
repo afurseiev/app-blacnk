@@ -7,8 +7,7 @@
  "main": "Server/a-start-point",
 
  "scripts": {
-    "start": "Server/a-start-point",
-    "heroku-postbuild": "rollup -c"
+    "start": "Server/a-start-point"
   },
 
   "repository": {
