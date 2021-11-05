@@ -1,0 +1,9 @@
+#!/usr/bin/env node  
+
+// /\ This is an instance of a shebang line: the very first line in an executable plain-text file 
+// on Unix-like platforms that tells the system what interpreter to pass that file to for execution, 
+// via the command line following the magic #! prefix (called shebang).
+
+const port = require('./b-config-from-env').port || 3000;  //port number might be taken from environmetal constans with config or by default 3000 
+const reactOn = require('./c-server-module');
+const server = reactOn.listen(port, () => {});
