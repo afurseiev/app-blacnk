@@ -6,6 +6,10 @@
  "description": "Simple application",
  "main": "Server/a-start-point",
 
+ "scripts": {
+    "start": "bin/www"
+  },
+
 
  "repository": {
   "type": "git",
