@@ -5,26 +5,22 @@
  "version": "0.1.0",
  "description": "Simple application",
  "main": "Server/a-start-point",
-
  "scripts": {
-    "start": "Server/a-start-point"
-  },
-
-  "repository": {
-    "type": "git",
-    "url": "https://sleepy-wave-23641.herokuapp.com/"
-  },
-
- "dependencies": 
-    {
-        "connect-redis": "^5.0.0",
-        "express": "^4.17.1",
-        "express-session": "^1.17.1",
-        "node-fetch": "^2.6.1",
-        "passport": "^0.4.1",
-        "passport-onshape": "^1.1.2",
-        "redis": "^3.1.1",
-        "three": "^0.125.0",
-        "uuid": "^8.3.1"
-    }
+  "start": "Server/a-start-point"
+ },
+ "repository": {
+  "type": "git",
+  "url": "https://sleepy-wave-23641.herokuapp.com/"
+ },
+ "dependencies": {
+  "connect-redis": "^5.0.0",
+  "express": "^4.17.1",
+  "express-session": "^1.17.1",
+  "node-fetch": "^2.6.1",
+  "passport": "^0.4.1",
+  "passport-onshape": "^1.1.2",
+  "redis": "^3.1.1",
+  "three": "^0.125.0",
+  "uuid": "^8.3.1"
+ }
 }
