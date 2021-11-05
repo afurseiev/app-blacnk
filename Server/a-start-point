@@ -5,5 +5,5 @@
 // via the command line following the magic #! prefix (called shebang).
 
 const port = require('./b-config-from-env').port || 3000;  //port number might be taken from environmetal constans with config or by default 3000 
-const reactOn = require('./c-server-module');
-const server = reactOn.listen(port, () => {});
+const app = require('./c-server-module');
+const server = app.listen(port, () => {});
