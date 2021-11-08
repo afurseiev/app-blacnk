@@ -4,10 +4,10 @@
  "name": "app-blanck",
  "version": "0.1.0",
  "description": "Simple application",
- "main": "Server/bin/a-start-point",
+ "main": "bin/a-start-point",
 
  "scripts": {
-    "start": "Server/bin/a-start-point"
+    "start": "bin/a-start-point"
   },
 
 
