@@ -1,4 +1,6 @@
 
+    module.exports = {
+
     // ===========================================Service functions definitions ============================================
     /**
      * Checks if the given string is a URL. A string considered a URL if it can be parsed
@@ -18,7 +20,7 @@
      *      given protocols (if provided); or `false` otherwise.
      */
 
-    function isValidUrl (stringToTest, protocols)
+    isValidUrl: (stringToTest, protocols) =>
      {
         try {
             const url = new URL(stringToTest);
@@ -32,7 +34,7 @@
         } catch {
             return false;
         }
-    }
+    },
 
     /**
      * Checks if the given string is an HTTP or HTTPS URL. A string is considered if it can
@@ -46,18 +48,18 @@
      * 
      * @param {string} stringToTest The string to check for validity.
      */
-    function isValidHttpUrl (stringToTest) {
+    isValidHttpUrl : (stringToTest) => {
         return isValidUrl(stringToTest, [ 'http:', 'https:' ]);
-    }
+    },
 
     /**
      * Checks if the given string has content, i.e. is not null and does not contain solely  whitespace characters.
      * @param {string} stringToTest The string to check for validity.
      */
-    function isValidString  (stringToTest) {
+    isValidString : (stringToTest) => {
         if (!stringToTest) return false;
         if (!(stringToTest.trim())) return false;
         return true;
     }
-    
-    export {isValidUrl,  isValidHttpUrl, isValidString};
+
+};

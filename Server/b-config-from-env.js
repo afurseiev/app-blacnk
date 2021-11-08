@@ -1,5 +1,10 @@
 
-import {isValidUrl, isValidHttpUrl, isValidString} from './z-utilities';
+
+const {isValidUrl}      = require('./z-utilities');
+const {isValidHttpUrl}  = require('./z-utilities');
+const {isValidString}   = require('./z-utilities');
+
+//import {isValidUrl, isValidHttpUrl, isValidString} from './z-utilities';
 
 //Configuration data should be extracted from environment successfully, otherwise  app will not run.
 //See the server console for detailed description in case of start failure
@@ -130,7 +135,6 @@ module.exports = {
     redisHost,              //The URL of the Redis host. This may be `undefined`.
     redisPort               //The port of the Redis host. This may be `undefined`.
 }
-
 
 
 
