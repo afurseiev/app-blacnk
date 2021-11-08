@@ -101,6 +101,6 @@ app.get ('/doesAutorized',  (req, res) => {
 
 
 // Redirecting API queries
-app.use('/api', require('./e-onshape-api')); 
+//app.use('/api', require('./e-onshape-api')); 
 
 module.exports = app;
