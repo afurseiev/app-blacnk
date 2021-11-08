@@ -1,7 +1,7 @@
 
-const isValidUrl        = require("z-utilities");
-const isValidHttpUrl    = require("z-utilities");
-const isValidString     = require("z-utilities");
+const isValidUrl        = require("./z-utilities");
+const isValidHttpUrl    = require("./z-utilities");
+const isValidString     = require("./z-utilities");
 
 //Configuration data should be extracted from environment successfully, otherwise  app will not run.
 //See the server console for detailed description in case of start failure
