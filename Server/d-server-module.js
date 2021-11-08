@@ -11,7 +11,7 @@ const OnshapeStrategy   = require('passport-onshape');
 
 // internal dependencies
 const config            = require('./b-config-from-env');
-const redisClient       = require('./d-redis-client');
+const redisClient       = require('./c-redis-client');
 
 let RedirectAddress = `https://oauth.onshape.com/oauth/authorize?response_type=code&client_id=${config.oauthClientId}`;
 
