@@ -83,6 +83,6 @@ app.get('/', (req, res) => {
 });
 
 // Redirecting API queries
-app.use('/api', require('./api')); 
+// app.use('/api', require('./api')); 
 
 module.exports = app;
