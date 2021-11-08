@@ -1,3 +1,8 @@
+
+const isValidUrl        = require("z-utilities");
+const isValidHttpUrl    = require("z-utilities");
+const isValidString     = require("z-utilities");
+
 //Configuration data should be extracted from environment successfully, otherwise  app will not run.
 //See the server console for detailed description in case of start failure
 
@@ -39,7 +44,8 @@ const webhookCallbackRootUrl = process.env.WEBHOOK_CALLBACK_ROOT_URL;
  * @returns {boolean} `true` if the given string is a valid URL, and has one of the
  *      given protocols (if provided); or `false` otherwise.
  */
-const isValidUrl = function(stringToTest, protocols) {
+/*
+ const isValidUrl = function(stringToTest, protocols) {
     try {
         const url = new URL(stringToTest);
         if (!protocols) {
@@ -69,7 +75,8 @@ const isValidUrl = function(stringToTest, protocols) {
  * 
  * @param {string} stringToTest The string to check for validity.
  */
-const isValidHttpUrl = function(stringToTest) {
+/*
+ const isValidHttpUrl = function(stringToTest) {
     return isValidUrl(stringToTest, [ 'http:', 'https:' ]);
 };
 
@@ -77,12 +84,13 @@ const isValidHttpUrl = function(stringToTest) {
  * Checks if the given string has content, i.e. is not null and does not contain solely  whitespace characters.
  * @param {string} stringToTest The string to check for validity.
  */
-const isValidString = function(stringToTest) {
+/*
+ const isValidString = function(stringToTest) {
     if (!stringToTest) return false;
     if (!(stringToTest.trim())) return false;
     return true;
 }
-
+*/
 
 
 
