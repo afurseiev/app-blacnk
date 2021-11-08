@@ -1,5 +1,0 @@
-#!/usr/bin/env node  
-
-const port = require('../Server/b-config-from-env').port || 3000;  //port number might be taken from environmetal constans with config or by default 3000 
-const app = require('../Server/c-server-module');
-const server = app.listen(port, () => {});
