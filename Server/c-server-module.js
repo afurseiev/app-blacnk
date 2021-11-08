@@ -13,7 +13,7 @@ const OnshapeStrategy = require('passport-onshape');
 
 // internal dependencies
 const config = require('./b-config-from-env');
-const redisClient = require('./redis-client');
+const redisClient = require('./d-redis-client');
 
 
 const app = express();
