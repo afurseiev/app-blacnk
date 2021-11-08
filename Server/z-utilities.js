@@ -18,7 +18,7 @@ module.exports = {
      * @returns {boolean} `true` if the given string is a valid URL, and has one of the
      *      given protocols (if provided); or `false` otherwise.
      */
-     isValidUrl = function (stringToTest, protocols)
+     isValidUrl : function (stringToTest, protocols)
      {
         try {
             const url = new URL(stringToTest);
@@ -46,7 +46,7 @@ module.exports = {
      * 
      * @param {string} stringToTest The string to check for validity.
      */
-    isValidHttpUrl = function (stringToTest) {
+    isValidHttpUrl : function (stringToTest) {
         return isValidUrl(stringToTest, [ 'http:', 'https:' ]);
     },
 
@@ -54,7 +54,7 @@ module.exports = {
      * Checks if the given string has content, i.e. is not null and does not contain solely  whitespace characters.
      * @param {string} stringToTest The string to check for validity.
      */
-    isValidString = function (stringToTest)
+    isValidString : function (stringToTest)
     {
         if (!stringToTest) return false;
         if (!(stringToTest.trim())) return false;
