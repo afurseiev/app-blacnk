@@ -1,5 +1,4 @@
 
-    module.exports = {
 
     // ===========================================Service functions definitions ============================================
     /**
@@ -19,8 +18,7 @@
      * @returns {boolean} `true` if the given string is a valid URL, and has one of the
      *      given protocols (if provided); or `false` otherwise.
      */
-
-    isValidUrl: (stringToTest, protocols) =>
+   const  isValidUrl = function (stringToTest, protocols)
      {
         try {
             const url = new URL(stringToTest);
@@ -34,7 +32,12 @@
         } catch {
             return false;
         }
-    },
+    }
+    
+    
+    module.exports = {
+
+    isValidUrl: isValidUrl,
 
     /**
      * Checks if the given string is an HTTP or HTTPS URL. A string is considered if it can
