@@ -10,6 +10,7 @@
     "start": "bin/a-start-point"
   },
 
+  "cacheDirectories": ["public/Script"],
 
  "repository": {
   "type": "git",
