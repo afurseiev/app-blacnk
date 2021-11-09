@@ -5,12 +5,9 @@
  "version": "0.1.0",
  "description": "Simple application",
  "main": "bin/a-start-point",
-
  "scripts": {
-    "start": "bin/a-start-point"
-  },
-
-  
+  "start": "bin/a-start-point"
+ },
  "repository": {
   "type": "git",
   "url": "https://sleepy-wave-23641.herokuapp.com/"
