@@ -10,8 +10,7 @@
     "start": "bin/a-start-point"
   },
 
-  "cacheDirectories": ["public/Script"],
-
+  
  "repository": {
   "type": "git",
   "url": "https://sleepy-wave-23641.herokuapp.com/"
