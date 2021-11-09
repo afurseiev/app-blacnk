@@ -5,7 +5,8 @@ getElementById(getElementsResult).textContent = getDocumentElements();
 
 function getDocumentElements()
 {
-    let response = await fetch('/api/elements');
+  return "hello";  
+  /*let response = await fetch('/api/elements');
     if (response.ok) { 
         let responseText = await response.text();
         console.log (responseText);
@@ -14,5 +15,6 @@ function getDocumentElements()
         alert("Ошибка HTTP: " + response.status);
         return response.status;
       }
+      */
 }
 
