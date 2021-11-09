@@ -74,12 +74,12 @@ app.use('/oauthRedirect', passport.authenticate('onshape', { failureRedirect: '/
 });
 
 app.get('/grantDenied', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'html', 'grantDenied.html'));
+    res.sendFile(path.join(__dirname, '/public', 'html', 'grantDenied.html'));
 })
 
 // providing Front end web page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'html', 'index.html'));
+    res.sendFile(path.join(__dirname, '/public', 'html', 'index.html'));
 });
 
 // checking the Open Autorization 
