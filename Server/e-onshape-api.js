@@ -13,3 +13,5 @@ const apiRouter = require('express').Router();
 apiRouter.get('/elements', (req, res) => {
     forwardRequestToOnshape(`${onshapeApiUrl}/documents/d/${req.query.documentId}/w/${req.query.workspaceId}/elements?withThumbnails=false`, req, res);
 });
+
+module.exports = apiRouter;
