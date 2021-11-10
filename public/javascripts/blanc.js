@@ -9,8 +9,8 @@ if (response.ok) {
     console.log (responseText);
     return responseText;
   } else {
-    alert("Ошибка HTTP: " + response.status);
-    return response.status;
+    
+    return "Ошибка HTTP: " + response.status;
   }
 };
       

@@ -74,8 +74,10 @@ const  isValidUrl = function (stringToTest, protocols)
          * @param {Request} req The request being proxied.
          * @param {Response} res The response being proxied.
          */
+
         forwardRequestToOnshape: async (apiPath, req, res) => {
             try {
+                console.log ("Api path in forwarder = " + onshapeApiUrl);
                 const normalizedUrl = apiPath.indexOf(onshapeApiUrl) === 0 ? apiPath : `${onshapeApiUrl}/${apiPath}`;
                 console.log ( "normalizedUrl = " + normalizedUrl);
                 const resp = await fetch(normalizedUrl, { headers: { Authorization: `Bearer ${req.user.accessToken}` }});
