@@ -6,7 +6,7 @@ var element = document.getElementById('getElementsResult');
 element.textContent = 'Hello';
 
 
-function getDocumentElements()
+/*function getDocumentElements()
 {
   return 'hello';  
   /*let response = await fetch('/api/elements');
@@ -18,6 +18,6 @@ function getDocumentElements()
         alert("Ошибка HTTP: " + response.status);
         return response.status;
       }
-      */
-}
+      
+}/*
 
