@@ -11,20 +11,17 @@ module.exports =
  * @param {Response} res The response being proxied.
  */
     forwardRequestToOnshape: async (apiPath, req, res) => {
-        try {
-           
-            const normalizedUrl = apiPath.indexOf(onshapeApiUrl) === 0 ? apiPath : `${onshapeApiUrl}/${apiPath}`;
-            
-            const resp = await fetch(normalizedUrl, { headers: { Authorization: `Bearer ${req.user.accessToken}` }});
-            console.log ( "Status = " + resp.status);
-            console.log ( "Error = " + err.message);
-            const data = await resp.text();
-            const contentType = resp.headers.get('Content-Type');
-            res.status(resp.status).contentType(contentType).send(data);
-            
-        } catch (err) {
-            res.status(500).json({ "msg" : err.message });
-            console.log (err.message);
+        const normalizedUrl = apiPath.indexOf(onshapeApiUrl) === 0 ? apiPath : `${onshapeApiUrl}/${apiPath}`;
+        const onshapeResponse = await fetch(normalizedUrl, { headers: { Authorization: `Bearer ${req.user.accessToken}` }});
+        if (onshapeResponse.ok)
+        {  
+            const data = await onshapeResponse.text();
+            const contentType = onshapeResponse.headers.get('Content-Type');
+            res.status(onshapeResponse.status).contentType(contentType).send(data);
+        }
+        else
+        {
+            res.status(onshapeResponse.status);  
         }
     }  
 }
