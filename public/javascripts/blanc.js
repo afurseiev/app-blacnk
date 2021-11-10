@@ -10,11 +10,10 @@ if (response.ok) {
     console.log (responseText);
     return responseText;
   } else {
-    
     return "Ошибка HTTP: " + response.status;
   }
 };
       
-element = getElements();
+element.textContent = getElements();
 
 
