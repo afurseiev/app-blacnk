@@ -1,16 +1,15 @@
 
 var element = document.getElementById('getElementsResult');
 
-async function getElements ()
+async function getElements () 
   {
     let response = await fetch(`/api/elements${window.location.search}`, { headers: { 'Accept': 'application/json' } });
-    if (response.ok)
-    {
+    if (response.ok) {
       let responseText =  await response.text();
+      console.log (responseText);
       return responseText;
     }
-    else
-    {
+    else {
       return "Ошибка HTTP: " + response.status;
     }
   }
