@@ -8,10 +8,10 @@ async function getElements ()
       let responseText =  await response.json();
       responseText = JSON.stringify(responseText);
       console.log (responseText);
-      return responseText;
+      element.textContent = responseText
     }
     else {
-      return "Ошибка HTTP: " + response.status;
+      element.textContent = "Ошибка HTTP: " + response.status;
     }
   }
   
@@ -48,6 +48,6 @@ async function getElements ()
 };
 */
 
-element.textContent = getElements();
+getElements();
 
 
