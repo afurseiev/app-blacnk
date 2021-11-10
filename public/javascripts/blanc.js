@@ -3,7 +3,7 @@
 
 
 var element = document.getElementById('getElementsResult');
-element.textContent = getDocumentElements();
+element.textContent = "Hello";
 
 
 function getDocumentElements()
