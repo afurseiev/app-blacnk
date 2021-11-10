@@ -1,16 +1,16 @@
 
 //const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
 
 var element = document.getElementById('getElementsResult');
-element.textContent = 'Hello';
+element.textContent = getDocumentElements();
 
 
-/*
+
 function getDocumentElements()
-{
-  return 'hello';  
-  /*let response = await fetch('/api/elements');
+{  
+    let response = await fetch('/api/elements');
     if (response.ok) { 
         let responseText = await response.text();
         console.log (responseText);
@@ -21,5 +21,5 @@ function getDocumentElements()
       }
       
 }
-*/
+
 
