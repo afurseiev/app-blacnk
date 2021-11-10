@@ -17,6 +17,7 @@ module.exports =
     forwardRequestToOnshape: async (apiPath, req, res) => {
         //const normalizedUrl = apiPath.indexOf(onshapeApiUrl) === 0 ? apiPath : `${onshapeApiUrl}/${apiPath}`;
         //const onshapeResponse = await fetch(normalizedUrl, { headers: { Authorization: `Bearer ${req.user.accessToken}` }});
+        console.log ("apiPath = " + apiPath);
         const onshapeResponse = await fetch(apiPath, { headers: { Authorization: `Bearer ${req.user.accessToken}` }});
         const status = await onshapeResponse.status;
         if (onshapeResponse.ok)
