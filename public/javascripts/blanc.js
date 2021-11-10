@@ -1,7 +1,10 @@
 
 //const fetch = require('node-fetch');
 
-getElementById(getElementsResult).textContent = getDocumentElements();
+
+var element = document.getElementById(getElementsResult);
+element.textContent = getDocumentElements();
+
 
 function getDocumentElements()
 {
