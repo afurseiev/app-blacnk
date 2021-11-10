@@ -6,7 +6,8 @@ var element = document.getElementById('getElementsResult');
 element.textContent = 'Hello';
 
 
-/*function getDocumentElements()
+/*
+function getDocumentElements()
 {
   return 'hello';  
   /*let response = await fetch('/api/elements');
@@ -19,5 +20,6 @@ element.textContent = 'Hello';
         return response.status;
       }
       
-}/*
+}
+*/
 
