@@ -12,10 +12,12 @@ module.exports =
  */
     forwardRequestToOnshape: async (apiPath, req, res) => {
         try {
-            console.log ("Api path in forwarder = " + onshapeApiUrl);
+           
             const normalizedUrl = apiPath.indexOf(onshapeApiUrl) === 0 ? apiPath : `${onshapeApiUrl}/${apiPath}`;
-            console.log ( "normalizedUrl = " + normalizedUrl);
+            
             const resp = await fetch(normalizedUrl, { headers: { Authorization: `Bearer ${req.user.accessToken}` }});
+            console.log ( "Status = " + resp.status);
+            console.log ( "Error = " + err.message);
             const data = await resp.text();
             const contentType = resp.headers.get('Content-Type');
             res.status(resp.status).contentType(contentType).send(data);
