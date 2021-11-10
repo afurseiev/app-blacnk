@@ -23,7 +23,8 @@ module.exports =
         else
         {
             console.log ("FAIL status = " + onshapeResponse.status);
-            res.status(onshapeResponse.status);  
+            console.log ("FAIL text = " + onshapeResponse.statusText);
+            res.status(onshapeResponse.status).send(onshapeResponse.statusText);  
         }
     }  
 }
