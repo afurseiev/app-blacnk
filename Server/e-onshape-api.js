@@ -1,6 +1,6 @@
 
 const { onshapeApiUrl } = require('./b-config-from-env');
-const { forwardRequestToOnshape } = require('./z-utilities');
+const { forwardRequestToOnshape } = require('./y-api-utils');
 
 const apiRouter = require('express').Router();
 /**
