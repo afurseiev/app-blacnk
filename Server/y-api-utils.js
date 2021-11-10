@@ -1,6 +1,6 @@
 
 const config            = require('./b-config-from-env');
-//const onshapeApiUrl     = require('./b-config-from-env');
+const { onshapeApiUrl }     = require('./b-config-from-env');
 const fetch             = require('node-fetch');
 const refresh           = require('passport-oauth2-refresh');
 
@@ -15,8 +15,9 @@ module.exports =
  * @param {Response} res The response being proxied.
  */
     forwardRequestToOnshape: async (apiPath, req, res) => {
-        const normalizedUrl = apiPath.indexOf(config.onshapeApiUrl) === 0 ? apiPath : `${config.onshapeApiUrl}/${apiPath}`;
-        const onshapeResponse = await fetch(normalizedUrl, { headers: { Authorization: `Bearer ${req.user.accessToken}` }});
+        //const normalizedUrl = apiPath.indexOf(onshapeApiUrl) === 0 ? apiPath : `${onshapeApiUrl}/${apiPath}`;
+        //const onshapeResponse = await fetch(normalizedUrl, { headers: { Authorization: `Bearer ${req.user.accessToken}` }});
+        const onshapeResponse = await fetch(apiPath, { headers: { Authorization: `Bearer ${req.user.accessToken}` }});
         const status = await onshapeResponse.status;
         if (onshapeResponse.ok)
         {  
