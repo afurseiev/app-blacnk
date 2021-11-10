@@ -1,3 +1,4 @@
+const { json } = require("express");
 
 var element = document.getElementById('getElementsResult');
 
@@ -7,6 +8,7 @@ async function getElements ()
 let response = await fetch(`/api/elements${window.location.search}`, { headers: { 'Accept': 'application/json' } })
 if (response.ok) { 
     let responseText = await response.text();
+    responseText = JSON.stringify(responseText);
     console.log (responseText);
     return responseText;
   } else {
