@@ -1,7 +1,10 @@
 
-const { onshapeApiUrl } = require('./b-config-from-env');
+const config            = require('./b-config-from-env');
+const onshapeApiUrl     = require('./b-config-from-env');
 const fetch             = require('node-fetch');
 const refresh           = require('passport-oauth2-refresh');
+
+let RedirectAddress = `https://oauth.onshape.com/oauth/authorize?response_type=code&client_id=${config.oauthClientId}`;
 
 module.exports = 
 {
