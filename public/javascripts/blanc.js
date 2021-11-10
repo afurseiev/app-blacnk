@@ -1,5 +1,5 @@
 
-const fetch = require('node-fetch');
+//const fetch = require('node-fetch');
 
 getElementById(getElementsResult).textContent = getDocumentElements();
 
