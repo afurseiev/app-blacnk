@@ -84,6 +84,7 @@ const  isValidUrl = function (stringToTest, protocols)
                 
             } catch (err) {
                 res.status(500).json({ "msg" : err.message });
+                console.log (err.message);
             }
         }
 
