@@ -47,9 +47,13 @@ module.exports =
                 }       
                 });
             }
-            console.log ("FAIL status = " + onshapeResponse.status);
-            console.log ("FAIL text = " + onshapeResponse.statusText);
-            res.status(onshapeResponse.status).send(onshapeResponse.statusText);  
+            else
+            {
+                console.log ("FAIL status = " + onshapeResponse.status);
+                console.log ("FAIL text = " + onshapeResponse.statusText);
+                res.status(onshapeResponse.status).send(onshapeResponse.statusText);  
+            }
+            
         }
     }  
 }
