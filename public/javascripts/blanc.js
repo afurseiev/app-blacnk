@@ -3,12 +3,12 @@
 
 
 var element = document.getElementById('getElementsResult');
-element.textContent = "Hello";
+element.textContent = 'Hello';
 
 
 function getDocumentElements()
 {
-  return "hello";  
+  return 'hello';  
   /*let response = await fetch('/api/elements');
     if (response.ok) { 
         let responseText = await response.text();
