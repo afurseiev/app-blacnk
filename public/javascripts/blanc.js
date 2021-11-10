@@ -5,7 +5,8 @@ async function getElements ()
   {
     let response = await fetch(`/api/elements${window.location.search}`, { headers: { 'Accept': 'application/json' } });
     if (response.ok) {
-      let responseText =  await response.text();
+      let responseText =  await response.json();
+      responseText = JSON.stringify(responseText);
       console.log (responseText);
       return responseText;
     }
