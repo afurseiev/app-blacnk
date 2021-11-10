@@ -15,12 +15,14 @@ module.exports =
         const onshapeResponse = await fetch(normalizedUrl, { headers: { Authorization: `Bearer ${req.user.accessToken}` }});
         if (onshapeResponse.ok)
         {  
+            console.log ("OK status = " + onshapeResponse.status);
             const data = await onshapeResponse.text();
             const contentType = onshapeResponse.headers.get('Content-Type');
             res.status(onshapeResponse.status).contentType(contentType).send(data);
         }
         else
         {
+            console.log ("FAIL status = " + onshapeResponse.status);
             res.status(onshapeResponse.status);  
         }
     }  
