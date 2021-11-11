@@ -1,5 +1,3 @@
-
-
 const {isValidUrl}      = require('./z-utilities');
 const {isValidHttpUrl}  = require('./z-utilities');
 const {isValidString}   = require('./z-utilities');

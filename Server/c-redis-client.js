@@ -1,7 +1,5 @@
 // external dependencies 
 const redis = require('redis');
-
-// internal dependencies
 const { redisToGoUrl, redisHost, redisPort } = require('./b-config-from-env');
 
 // The Redis client to be used throughout the app.
