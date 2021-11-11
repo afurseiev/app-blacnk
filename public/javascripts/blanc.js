@@ -23,13 +23,17 @@ function tableCreate(dataArray) {
   let headType = document.createElement('th');
   let headName = document.createElement('th');
 
-  headNumber.appendChild (document.createTextNode("Number"));
+ // headNumber.appendChild (document.createTextNode("Number"));
   headType.appendChild (document.createTextNode("Type"));
   headName.appendChild (document.createTextNode("Name"));
 
-  headerRow.appendChild (headNumber);
+  //headerRow.appendChild (headNumber);
+  headerRow.appendChild (document.createElement('th').appendChild(document.createTextNode("Number")));
   headerRow.appendChild (headType);
   headerRow.appendChild (headName);
+
+  
+
 
   tableHeader.appendChild(headerRow);
 
