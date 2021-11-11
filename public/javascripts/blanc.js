@@ -8,7 +8,7 @@ async function getElements ()
       let responseJson =  await response.json();
       responseJson = JSON.stringify(responseJson)
       const myArray = JSON.parse(responseJson);
-      let responseText = myArray[0];
+      let responseText = myArray[0].lengthUnits;
       console.log (responseText);
       element.textContent = responseText
     }
