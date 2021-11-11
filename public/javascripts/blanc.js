@@ -5,7 +5,9 @@ async function getElements ()
   {
     let response = await fetch(`/api/elements${window.location.search}`, { headers: { 'Accept': 'application/json' } });
     if (response.ok) {
-      let responseText =  await response.text();
+      let responseText =  await response.json();
+      const myArray = JSON.parse(responseText);
+      responseText = myArray[0];
       console.log (responseText);
       element.textContent = responseText
     }
@@ -21,7 +23,7 @@ getElements();
 function tableCreate() {
   var body = document.getElementsByTagName('body')[0];
   var tbl = document.createElement('table');
-  tbl.style.width = '100%';
+  tbl.style.width = '60%';
   tbl.setAttribute('border', '1');
   var tbdy = document.createElement('tbody');
   for (var i = 0; i < 3; i++) {
