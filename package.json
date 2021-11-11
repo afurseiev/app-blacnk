@@ -6,8 +6,7 @@
  "description": "Simple application",
  "main": "bin/a-start-point",
  "scripts": {
-  "start": "bin/a-start-point",
-  "heroku-postbuild": "rollup -c"
+  "start": "bin/a-start-point"
  },
  "repository": {
   "type": "git",
