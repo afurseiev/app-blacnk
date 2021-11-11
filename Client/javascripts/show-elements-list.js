@@ -61,26 +61,7 @@ function tableCreate(dataArray) {
     }
     tableBody.appendChild(tableRow);
   }
-
   elementTable.appendChild(tableBody);
-  
-  /*for (var i = 0; i < tableRowCount; i++) {
-    var tr = document.createElement('tr');
-    for (var j = 0; j < 3; j++) {
-      if (i == 0) {
-
-        break
-      } else {
-        var td = document.createElement('td');
-        td.appendChild(document.createTextNode('\u0020'))
-        i == 1 && j == 1 ? td.setAttribute('rowSpan', '2') : null;
-        tr.appendChild(td)
-      }
-    }
-    tbdy.appendChild(tr);
-  }
-  */
- // tbl.appendChild(tableHeader);
   body.appendChild(elementTable);
 }
 
