@@ -5,9 +5,10 @@ async function getElements ()
   {
     let response = await fetch(`/api/elements${window.location.search}`, { headers: { 'Accept': 'application/json' } });
     if (response.ok) {
-      let responseText =  await response.json();
-      const myArray = JSON.parse(responseText);
-      responseText = myArray[0];
+      let responseJson =  await response.json();
+      responseJson = JSON.stringify(responseJson)
+      const myArray = JSON.parse(responseJson);
+      let responseText = myArray[0];
       console.log (responseText);
       element.textContent = responseText
     }
