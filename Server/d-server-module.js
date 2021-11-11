@@ -19,7 +19,7 @@ let RedirectAddress = `https://oauth.onshape.com/oauth/authorize?response_type=c
 const app = express();
 
 //app.use(express.static(path.join(__dirname, '../Client')));
-app.use(express.static('../Client'));
+app.use(express.static('Client'));
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use(bodyParser.json());
 
