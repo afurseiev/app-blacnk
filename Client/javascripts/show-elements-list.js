@@ -1,10 +1,6 @@
 
 var element = document.getElementById('getElementsResult');
 
-
-/** 
- *  @param {array} dataArray .
-*/
 function tableCreate(dataArray) {
   var body = document.getElementsByTagName('body')[0]; //get the first body-type object available on web page
   
@@ -30,7 +26,6 @@ function tableCreate(dataArray) {
   headerRow.appendChild (headName);
 
   tableHeader.appendChild(headerRow);
-
   elementTable.appendChild(tableHeader);
 
 
