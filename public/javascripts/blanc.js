@@ -13,7 +13,16 @@ async function getElements ()
       element.textContent = responseText
     }
     else {
-      element.textContent = "Ошибка HTTP: " + response.status;
+       if (response.status == 401)
+          {
+            let autorizationRedirect = await response.text(); 
+            window.location.href = autorizationRedirect; 
+          }
+          else {
+            document.write("Server response" + response.statusText +"(" + response.status +")" );
+            console.log(response.statusText);
+            console.log("Not 200");
+          }
     }
   }
   
