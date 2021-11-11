@@ -46,13 +46,13 @@ function tableCreate(dataArray) {
       let content = undefined;
       switch (J)
       {
-        case "0":
+        case 0:
           content = i+1;
           break;
-        case "1":
+        case 1:
           content = dataArray[i].type;
           break;
-        case "2":
+        case 2:
           content = dataArray[i].name; 
           break;   
       }  
