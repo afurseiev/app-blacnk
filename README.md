@@ -111,15 +111,25 @@ All necessary data to completely define application on the Onshape side was achi
 		+ Application address: `<string-string-number>.herokuapp.com`
 		+ Reverse domain: `com.herokuapp.<string-string-number>`
 	+ **Redirect URLs**: - address for proper OAuth functioning:`https://<string-string-number>.herokuapp.com/oauthRedirect`  
-	+ **OAuth URL**: https://<string-string-number>.herokuapp.com/oauthSignin 
+	+ **OAuth URL**: https://`<string-string-number>`.herokuapp.com/oauthSignin 
 	+ **Admin Team** - this is optional setting you have to define in case when application should be shared with your team mates.
 	+ Set permissions:
 		- Application can read your profile information
 		- Application can read your documents	
-	+ Click "Create application".
-	+ Create Store Entry for your application
-		* Note the **Client Secret** - it wont be available later.
-		* Note the **Client ID**
+- Click "Create application".
+  <div class="fs-image-row fs-image-row-medium"> <img src="readmeData/images/SecretMessage.PNG"  alt="Secret-message"> </div>
+- Note the **Client Secret** - it wont be available later
+- Note the **Client ID** from the application properties
+- Create Extension for your application
+  - Go to "Extensions" tab
+  - Click "Add extension"
+    - Name: `<Enter extension name>`
+    - Description(Optional): `<Enter extension description>`
+    - Location: Element Tab
+    - Action URL: `https://<string-string-number>.herokuapp.com>`
+    - Icon(Optional): <Drop an image to upload>
+- Create Store Entry for your application.
+		
 </div>
 
 
