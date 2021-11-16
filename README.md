@@ -40,7 +40,7 @@ Environment setup:
  4 | Download and Install GIT - https://git-scm.com/download/win | 
 
 
-Keep in mind also (my own pitfalls):
+Keep in mind also:
 - Using of Visual studio code might make your work more convenient.
 - Your client-side application will interact with onshape api server thru the server-side that will use **Open Authentication (OAuth) protocol** .
 - Git-Hub projects initially have default branch **"main"**. Remote repositories automatically created by Heroku have default branch **"master"**. Remember this while handling situations with failed operations like `git push heroku master/main`
@@ -110,8 +110,8 @@ All necessary data to completely define application on the Onshape side was achi
 	+  **Primary format**. Reverse domain name that you can get by reversing your server address. Follow the template:
 		+ Application address: `<string-string-number>.herokuapp.com`
 		+ Reverse domain: `com.herokuapp.<string-string-number>`
-	+ **Redirect URLs**: - address for proper OAuth functioning:`https://<string-string-number>.herokuapp.com/oauthRedirect`  
-	+ **OAuth URL**: https://`<string-string-number>`.herokuapp.com/oauthSignin 
+	+ **Redirect URLs**: `https://<string-string-number>.herokuapp.com/oauthRedirect`  
+	+ **OAuth URL**: `https://<string-string-number>.herokuapp.com/oauthSignin`
 	+ **Admin Team** - this is optional setting you have to define in case when application should be shared with your team mates.
 	+ Set permissions:
 		- Application can read your profile information
@@ -122,12 +122,12 @@ All necessary data to completely define application on the Onshape side was achi
 - Note the **Client ID** from the application properties
 - Create Extension for your application
   - Go to "Extensions" tab
-  - Click "Add extension"
+  - Click "Add extension", set properties:
     - Name: `<Enter extension name>`
     - Description(Optional): `<Enter extension description>`
     - Location: Element Tab
     - Action URL: `https://<string-string-number>.herokuapp.com>`
-    - Icon(Optional): <Drop an image to upload>
+    - Icon(Optional): `<Drop an image to upload>`
 - Create Store Entry for your application.
 		
 </div>
