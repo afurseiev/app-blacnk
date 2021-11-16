@@ -1,8 +1,3 @@
-
-
-
-
-
 /**
  * Checks if the given string is a URL. A string considered a URL if it can be parsed
  * as a URL (based on the WHATWG definition).
