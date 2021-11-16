@@ -1,0 +1,800 @@
+/**
+ * Forked from https://github.com/sindresorhus/github-markdown-css
+ */
+
+body {
+  font-family: "Open Sans", Arial, freesans, sans-serif;
+  margin-top: 0;
+}
+
+.fs-doc-body {
+  margin-left: 1px;
+  padding-bottom: 60px;
+  min-width: 200px;
+  max-width: 900px;
+  padding-top: 1em;
+  color: #333;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  background-color: #FFFFFF;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.fs-logo {
+  padding-left: 15px;
+  padding-top: .4em;
+  padding-bottom: .5em;
+  background: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.fs-logo a,
+.fs-logo a:visited,
+.fs-logo a:active,
+.fs-logo a:hover {
+  font-family: "Tahoma", sans-serif;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1651B0;
+}
+
+.fs-section-heading {
+  padding-left: 15px;
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.fs-section-heading p,
+.fs-section-heading a,
+.fs-section-heading a:visited,
+.fs-section-heading a:active,
+.fs-section-heading a:hover {
+  text-decoration: none;
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 0.5em;
+  -webkit-margin-after: 0.5em;
+}
+
+.fs-active-link {
+  font-weight: bold;
+}
+
+.fs-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 15px;
+  margin: 0;
+  margin-left: 30px;
+}
+
+.fs-sidebar ul li {
+  margin-top: .4em;
+  margin-bottom: .2em;
+}
+
+.fs-sidebar ul li a,
+.fs-sidebar ul li a:visited,
+.fs-sidebar ul li a:active,
+.fs-sidebar ul li a:hover {
+  font-size: .85em;
+  text-decoration: none;
+  color: #666;
+  line-height: 140%;
+  display: inline-block;
+}
+
+.fs-doc-body .compact-list > ol {
+  margin-bottom: 0;
+}
+
+.fs-doc-body .compact-list {
+  margin-bottom: 1em;
+}
+
+.fs-doc-body .spacious-list > ul > li {
+  margin-bottom: 0.5em;
+}
+
+.fs-doc-body .spacious-list > ul {
+  margin-bottom: 1.5em;
+}
+
+.fs-doc-body .spacious-list em {
+  color: #666;
+}
+
+.fs-doc-body .fs-file {
+  margin-bottom: 4em;
+}
+
+.fs-doc-body h1 {
+  font-family: "Tahoma", sans-serif;
+  padding-top: 0.2em;
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  background-color :white ;
+  color            :#1651b0 ;  
+}
+
+.fs-doc-body h1 .anchor {
+  line-height: 0;
+}
+
+.fs-doc-body h2 {
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+  font-size: 1.7em;
+  line-height: 1.225;
+  font-family: "Tahoma", sans-serif;
+  color            : black ;  
+}
+
+.fs-doc-body h2 .anchor {
+  line-height: 1;
+}
+
+.fs-doc-body .file-header {
+  padding-top: 0;
+  font-size: 1.5em;
+  font-weight: normal;
+  border-bottom: 1px solid #eee;
+}
+
+.fs-doc-body .file-header,
+.fs-doc-body .file-header a,
+.fs-doc-body .file-header a:visited,
+.fs-doc-body .file-header a:active,
+.fs-doc-body .file-header a:hover {
+  color: #777777;
+}
+
+.fs-doc-body .fs-symbol-name,
+.fs-doc-body .fs-symbol-name a,
+.fs-doc-body .fs-symbol-name a:visited,
+.fs-doc-body .fs-symbol-name a:active,
+.fs-doc-body .fs-symbol-name a:hover {
+  color: #333333;
+}
+
+.fs-doc-body .file-header a:hover,
+.fs-doc-body .fs-symbol-name a:hover {
+  text-decoration: none;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: .3em;
+  font-weight: normal;
+}
+
+.fs-doc-body h3 {
+  margin-top: 2em;
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.fs-doc-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.fs-doc-body h4 {
+  font-size: 1.25em;
+}
+
+.fs-doc-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.fs-doc-body h5 {
+  font-size: 1em;
+}
+
+.fs-doc-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.fs-doc-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.fs-doc-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.fs-doc-body .fs-nav-button {
+  cursor: pointer;
+  color: #1651B0;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.fs-doc-body a,
+.fs-doc-body a > code {
+  color: #4078c0;
+}
+
+.fs-doc-body a:visited,
+.fs-doc-body a:visited > code  {
+  color: #4B1BAA;
+}
+
+.fs-doc-body a,
+.fs-doc-body a:visited,
+.fs-doc-body a:active,
+.fs-doc-body a:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.fs-doc-body a:hover {
+  text-decoration: underline;
+}
+
+.fs-doc-body .see-also-header {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.fs-doc-body .node-signature {
+  text-indent: -2em;
+  margin-left:  2em;
+  margin-top: 2em;
+}
+
+.fs-doc-body .fs-symbol-name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.fs-doc-body .fs-function-return,
+.fs-doc-body .fs-function-arguments {
+  font-family: 'Open Sans Mono', monospace, sans-serif;
+  font-size: 1em;
+}
+
+.fs-doc-body .fs-symbol-descriptor {
+  font-family: 'Open Sans Mono', monospace;
+  margin-left: .2em;
+}
+
+.fs-doc-body .fs-doc-content {
+  margin-left: 2em;
+}
+
+.fs-doc-body a:active,
+.fs-doc-body a:hover {
+  outline: 0;
+}
+
+.fs-doc-body .fs-example-label {
+  font-family: 'Quicksand', sans-serif;
+  font-size: .8em;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #999;
+}
+
+.fs-doc-body .fs-note-label {
+  font-family: 'Quicksand', sans-serif;
+  font-size: .9em;
+  font-weight: 700;
+  margin-bottom: .1em;
+  margin-top: .1em;
+  color: #333;
+}
+
+.fs-doc-body .fs-note {
+  background: #f4f4f4;
+  padding: 8px;
+  padding-left: 16px;
+  color: #666;
+  font-size: .9em;
+  border-radius: 2px;
+  border-left: 8px solid #d8d8d8;
+  margin-bottom: 2em;
+}
+
+.fs-doc-body video {
+  width: 95%;
+  height: 100%;
+}
+
+.fs-doc-body .fs-image-row {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.fs-doc-body .fs-image-row > img {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.fs-image-row-extra-small > img {
+  height: 75px;
+}
+
+.fs-image-row-small > img {
+  height: 150px;
+}
+
+.fs-image-row-medium > img {
+  height: 250px;
+}
+
+.fs-image-row-large > img {
+  height: 400px;
+}
+
+.fs-doc-body video,
+.fs-doc-body img,
+.fs-doc-body .fs-image-row img {
+  box-shadow: 0 10px 28px rgba(0,0,0,0.20), 5px 10px 10px rgba(0,0,0,0.11), 20px 0 20px rgba(0,0,0,0.04);
+  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-right: 15px;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+.fs-doc-body .fs-block-row {
+  white-space: normal;
+}
+
+.fs-doc-body .fs-block-row pre,
+.fs-doc-body .fs-block-row img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.fs-doc-body .fs-block-row pre {
+  margin-top: 1em;
+  min-width: 400px;
+}
+
+
+.fs-doc-body .fs-note img {
+  margin-top: .2em;
+  margin-bottom: .4em;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+.fs-doc-body ol img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.fs-doc-body pre {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 0 18px rgba(0,0,0,0.08);
+}
+
+.fs-doc-body .highlight pre,
+.fs-doc-body pre {
+  padding: 10px 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f8f8f8;
+  border-left: 8px solid #e8e8e8;
+}
+
+.fs-doc-body .fs-code-insertion {
+  border-left: 8px solid #65D990;
+}
+
+.fs-doc-body .fs-code-deletion {
+  border-left: 8px solid #FF8F77;
+}
+
+.fs-doc-body .fs-code-change {
+  border-left: 8px solid #FFCB77;
+}
+
+.fs-doc-body .fs-code-final {
+  border-left: 8px solid #4078C0;
+}
+
+.fs-doc-body .fs-code-insertion > span {
+  background-color: #ACEBC3;
+}
+
+.fs-doc-body .fs-code-deletion> span {
+  background-color: #FFC7BB;
+}
+
+.fs-doc-body .fs-code-change > span {
+  background-color: #EFF23D;
+}
+
+.fs-doc-body .fs-code-final > span {
+  background-color: #AEC6E6;
+}
+
+.fs-doc-body .fs-note > pre {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #fcfcfc;
+  margin-right: 20px;
+  margin-bottom: 1em;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+}
+
+.fs-doc-body ul {
+  margin-bottom: 1em;
+}
+
+.fs-doc-body .fs-name-column {
+  max-width: 220px;
+}
+
+.fs-doc-body .fs-type-column {
+  max-width: 150px;
+}
+
+.fs-doc-body .fs-name-column,
+.fs-doc-body .fs-type-column {
+  overflow: auto;
+  word-wrap: normal;
+}
+
+.fs-doc-body th {
+  text-align: left;
+  font-weight: normal;
+  color: #666;
+  background-color: #EEE;
+}
+
+.fs-doc-body td {
+  vertical-align: top;
+  text-align: left;
+}
+
+.fs-doc-body strong {
+  font-weight: bold;
+}
+
+.fs-doc-body h1 {
+  margin: 0.67em 0;
+}
+
+.fs-doc-body img {
+  border: 0;
+}
+
+.fs-doc-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.fs-doc-body pre {
+  overflow: auto;
+}
+
+.fs-doc-body code,
+.fs-doc-body kbd,
+.fs-doc-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.fs-doc-body del {
+  text-decoration: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.fs-doc-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.fs-doc-body html input[disabled] {
+  cursor: default;
+}
+
+.fs-doc-body input {
+  line-height: normal;
+}
+
+.fs-doc-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.fs-doc-body table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.fs-doc-body tbody {
+  width: 100%;
+}
+
+.fs-doc-body td,
+.fs-doc-body th {
+  padding: 0;
+}
+
+.fs-doc-body * {
+  box-sizing: border-box;
+}
+
+.fs-doc-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.fs-doc-body hr:before {
+  display: table;
+  content: "";
+}
+
+.fs-doc-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.fs-doc-body blockquote {
+  margin: 0;
+}
+
+.fs-doc-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -7px;
+}
+
+.fs-doc-body > ol > li {
+  margin-bottom: 2em;
+  padding-left: .5em;
+}
+
+.fs-doc-body > ol ul {
+  list-style-type: disc;
+}
+
+.fs-doc-body ol ol,
+.fs-doc-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.fs-doc-body ul ul ol,
+.fs-doc-body ul ol ol,
+.fs-doc-body ol ul ol,
+.fs-doc-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.fs-doc-body dd {
+  margin-left: 0;
+}
+
+.fs-doc-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.fs-doc-body pre {
+  margin-top: 0;
+  margin-bottom: 2em;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 1.4em;
+}
+
+.fs-doc-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.fs-doc-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.fs-doc-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fs-doc-body h1,
+.fs-doc-body h2,
+.fs-doc-body h3,
+.fs-doc-body h4,
+.fs-doc-body h5,
+.fs-doc-body h6 {
+  position: relative;
+  line-height: 1.4;
+}
+
+.fs-doc-body h1:hover .anchor,
+.fs-doc-body h2:hover .anchor,
+.fs-doc-body h3:hover .anchor,
+.fs-doc-body h4:hover .anchor,
+.fs-doc-body h5:hover .anchor,
+.fs-doc-body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  text-decoration: none;
+}
+
+.fs-doc-body p,
+.fs-doc-body blockquote,
+.fs-doc-body ul,
+.fs-doc-body ol,
+.fs-doc-body dl,
+.fs-doc-body table {
+  margin-top: 0;
+  margin-bottom: .8em;
+}
+
+.fs-doc-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.fs-doc-body ul,
+.fs-doc-body ol {
+  padding-left: 2em;
+}
+
+.fs-doc-body ul ul,
+.fs-doc-body ul ol,
+.fs-doc-body ol ol,
+.fs-doc-body ol ul {
+  margin-top: 0;
+}
+
+.fs-doc-body li>p {
+  margin-top: 16px;
+}
+
+.fs-doc-body dl {
+  padding: 0;
+}
+
+.fs-doc-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.fs-doc-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.fs-doc-body blockquote {
+  padding: 0 15px;
+  border-left: 4px solid #ddd;
+  color: #999;
+}
+
+.fs-doc-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.fs-doc-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.fs-doc-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.fs-doc-body table th,
+.fs-doc-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.fs-doc-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.fs-doc-body table tr:nth-child(2n) {
+  background-color: #fafafa;
+}
+
+.fs-doc-body kbd {
+  display: inline;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  background-color: #fafafa;
+  margin-right: 0.4em;
+  -webkit-box-shadow: 0 .2em .5em rgba(0,0,0,.25);
+     -moz-box-shadow: 0 .2em .5em rgba(0,0,0,.25);
+          box-shadow: 0 .2em .5em rgba(0,0,0,.25);
+}
+
+.fs-doc-body blockquote code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+  color: #999;
+}
+
+.fs-doc-body blockquote code:before,
+.fs-doc-body blockquote code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.fs-doc-body code {
+  color: #888;
+  font-family: "Open Sans Mono", monospace;
+  font-size: 1em;
+}
+
+.fs-doc-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.fs-doc-body .highlight {
+  margin-bottom: 16px;
+}
+
+.fs-doc-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.fs-doc-body pre {
+  word-wrap: normal;
+}
+
+.fs-doc-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.fs-doc-body pre code:before,
+.fs-doc-body pre code:after {
+  content: normal;
+}
