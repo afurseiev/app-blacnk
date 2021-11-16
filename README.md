@@ -80,6 +80,7 @@ Our application will be build and started-up on the remote server provided by He
 - Follow the intructions - pass your credentials on web page and continue when access granted.
 - Create new application: D:\Heroku\app-blanc>`heroku create`
 - Note URLs provided after command execution:
+    + `<string-string-number>` - name of the application, will be used several times later
 	+ `https://<string-string-number>.herokuapp.com/`-  the address of the server, its front web page.
 	+ `https://git.heroku.com/<string-string-number>.git`- is the remote git repository, source of the code for application building.
 </div>
@@ -90,7 +91,7 @@ Our application will be build and started-up on the remote server provided by He
 
 <div class="fs-note">
 
- - Create Redis-To-Go server with conslole command: D:\Heroku\app-blanc>`heroku addons:create redistogo`
+ - Create Redis-To-Go server with conslole command: D:\Heroku\app-blanc>`heroku addons:create redistogo --app = <string-string-number>`
  - Go to your Heroku profile in browser
  - Navigate: Dashboard -> `<your application>` ->Installed add-ons -> Redis-To-Go -> click link.  
  - On the configuration data page note the **address of the redis server**.
